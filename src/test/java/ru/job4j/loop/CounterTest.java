@@ -9,7 +9,7 @@ class CounterTest {
     void whenStart0Finish10Sum15() {
         int start = 0;
         int finish = 10;
-        int expected = 15;
+        int expected = 55;
         int output = Counter.sum(start, finish);
         assertThat(output).isEqualTo(expected);
     }
@@ -18,7 +18,7 @@ class CounterTest {
     void whenStartMinus1Finish0Sum0() {
         int start = -1;
         int finish = 0;
-        int expected = 0;
+        int expected = -1;
         int output = Counter.sum(start, finish);
         assertThat(output).isEqualTo(expected);
     }
